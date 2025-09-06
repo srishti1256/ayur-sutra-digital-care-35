@@ -332,20 +332,49 @@ const RoleSelection = () => {
           ))}
         </div>
 
-        {/* Additional Trust Indicators */}
-        <div className="mt-12 text-center">
-          <div className="inline-flex items-center space-x-6 p-4 bg-background rounded-lg card-shadow">
-            <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-              <Shield className="h-4 w-4 text-success" />
-              <span>Government Verified</span>
-            </div>
-            <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-              <Clock className="h-4 w-4 text-success" />
-              <span>24/7 Support</span>
-            </div>
-            <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-              <MapPin className="h-4 w-4 text-success" />
-              <span>Pan-India Coverage</span>
+        {/* Government Compliance Badges */}
+        <div className="mt-16 text-center">
+          <div className="max-w-4xl mx-auto space-y-6">
+            <div className="flex flex-wrap justify-center items-center gap-8 p-8 bg-gradient-to-r from-success/5 via-primary/5 to-secondary/5 rounded-2xl card-shadow">
+              <div className="flex flex-col items-center space-y-3 min-w-[200px]">
+                <div className="p-4 bg-success/10 rounded-full">
+                  <Shield className="h-8 w-8 text-success" />
+                </div>
+                <div className="text-center">
+                  <h4 className="font-bold text-lg text-success">AYUSH Verified</h4>
+                  <p className="text-sm text-muted-foreground">Ministry of Ayush Certified Platform</p>
+                </div>
+              </div>
+              
+              <div className="flex flex-col items-center space-y-3 min-w-[200px]">
+                <div className="p-4 bg-primary/10 rounded-full">
+                  <CheckCircle className="h-8 w-8 text-primary" />
+                </div>
+                <div className="text-center">
+                  <h4 className="font-bold text-lg text-primary">NDHM Compliant</h4>
+                  <p className="text-sm text-muted-foreground">National Digital Health Mission Standards</p>
+                </div>
+              </div>
+              
+              <div className="flex flex-col items-center space-y-3 min-w-[200px]">
+                <div className="p-4 bg-secondary/10 rounded-full">
+                  <Clock className="h-8 w-8 text-secondary" />
+                </div>
+                <div className="text-center">
+                  <h4 className="font-bold text-lg text-secondary">24/7 Support</h4>
+                  <p className="text-sm text-muted-foreground">Government Helpline Available</p>
+                </div>
+              </div>
+              
+              <div className="flex flex-col items-center space-y-3 min-w-[200px]">
+                <div className="p-4 bg-accent/10 rounded-full">
+                  <MapPin className="h-8 w-8 text-accent" />
+                </div>
+                <div className="text-center">
+                  <h4 className="font-bold text-lg text-accent">Pan-India Coverage</h4>
+                  <p className="text-sm text-muted-foreground">All States & Union Territories</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
