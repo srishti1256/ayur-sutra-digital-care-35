@@ -83,7 +83,7 @@ const HeroSection = () => {
           </div>
 
           {/* Right Content - Hero Image */}
-          <div className="relative -mt-16">
+          <div className="relative -mt-24">
             <div className="relative z-10">
               <img
                 src={heroImage}
@@ -94,14 +94,14 @@ const HeroSection = () => {
             </div>
             
             {/* Floating Stats Cards */}
-            <Card className="absolute -bottom-6 -left-6 p-4 bg-background/95 backdrop-blur card-shadow">
+            <Card className="absolute -bottom-6 -left-6 p-4 bg-background/95 backdrop-blur card-shadow z-20">
               <div className="text-center">
                 <div className="text-2xl font-bold text-primary">10K+</div>
                 <div className="text-sm text-muted-foreground">Verified Doctors</div>
               </div>
             </Card>
             
-            <Card className="absolute -top-6 -right-6 p-4 bg-background/95 backdrop-blur card-shadow">
+            <Card className="absolute -top-6 -right-6 p-4 bg-background/95 backdrop-blur card-shadow z-20">
               <div className="text-center">
                 <div className="text-2xl font-bold text-secondary">500+</div>
                 <div className="text-sm text-muted-foreground">Cities Covered</div>
