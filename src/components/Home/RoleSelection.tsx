@@ -9,7 +9,33 @@ import {
   ArrowRight,
   Shield,
   Clock,
-  MapPin
+  MapPin,
+  Languages,
+  Smartphone,
+  Wifi,
+  Brain,
+  Heart,
+  FileText,
+  Bell,
+  CreditCard,
+  Star,
+  Database,
+  TrendingUp,
+  Globe,
+  CheckCircle,
+  Zap,
+  Users,
+  Calendar,
+  MessageCircle,
+  Phone,
+  Download,
+  Truck,
+  BarChart,
+  Lock,
+  Search,
+  AlertTriangle,
+  Award,
+  Activity
 } from "lucide-react";
 
 const RoleSelection = () => {
@@ -17,62 +43,225 @@ const RoleSelection = () => {
     {
       id: "patient",
       title: "Patient Portal",
-      description: "Access your health records, book appointments, track treatments",
+      description: "Comprehensive Ayurveda healthcare management with government compliance",
       icon: User,
       color: "text-primary",
       bgColor: "bg-primary/10",
       features: [
-        "Aadhaar-verified profile",
-        "Panchakarma tracking",
-        "Voice-enabled chat",
-        "Multilingual support"
+        "Aadhaar-verified onboarding",
+        "Dosha-based consultations",
+        "Panchakarma therapy tracking",
+        "AI chatbot with voice support",
+        "Multilingual interface",
+        "Offline-ready access"
       ],
       badge: "For Patients"
     },
     {
       id: "doctor",
       title: "Doctor Dashboard",
-      description: "Manage patients, create prescriptions, conduct consultations",
+      description: "Advanced practitioner portal with research integration and telemedicine",
       icon: Stethoscope,
       color: "text-secondary",
       bgColor: "bg-secondary/10",
       features: [
-        "Government verification",
+        "Government badge verification",
+        "Real-time patient queue",
+        "Research case contributions",
+        "E-prescription with herbal database",
         "Telemedicine platform",
-        "Research contributions",
-        "E-prescription system"
+        "Achievement showcase"
       ],
       badge: "For Practitioners"
     },
     {
       id: "pharmacy",
       title: "Pharmacy System",
-      description: "Manage inventory, process prescriptions, track deliveries",
+      description: "Complete inventory management with verified supply chain tracking",
       icon: Pill,
       color: "text-accent",
       bgColor: "bg-accent/10",
       features: [
-        "License verification",
-        "Stock management",
-        "Batch tracking",
-        "Delivery coordination"
+        "License verification system",
+        "Real-time stock management",
+        "Batch tracking & expiry control",
+        "Prescription fulfillment workflow",
+        "Delivery partner coordination",
+        "Low-stock herb notifications"
       ],
       badge: "For Pharmacies"
     },
     {
       id: "admin",
       title: "Admin Panel",
-      description: "System management, analytics, compliance monitoring",
+      description: "Comprehensive system management with national reporting and analytics",
       icon: Settings,
       color: "text-muted-foreground",
       bgColor: "bg-muted/20",
       features: [
-        "User verification",
+        "Practitioner verification",
+        "National registry checks",
         "Analytics dashboard",
         "Compliance monitoring",
-        "National reporting"
+        "Multilingual content management",
+        "NDHM/AYUSH reporting"
       ],
       badge: "For Administrators"
+    }
+  ];
+
+  const detailedFeatures = [
+    {
+      category: "Enhanced Patient App Features",
+      icon: Heart,
+      color: "text-primary",
+      bgColor: "bg-primary/5",
+      features: [
+        {
+          title: "Aadhaar-Verified Onboarding",
+          description: "Secure identity verification following government portal standards",
+          icon: Shield
+        },
+        {
+          title: "Dynamic Language Selection",
+          description: "Regional language support for inclusive healthcare access",
+          icon: Languages
+        },
+        {
+          title: "Panchakarma Scheduler",
+          description: "Government health milestone tracking with clinical KPIs",
+          icon: Calendar
+        },
+        {
+          title: "AI Chatbot with Voice Support",
+          description: "Elderly-friendly interface with doctor escalation for complex queries",
+          icon: MessageCircle
+        },
+        {
+          title: "Therapy Management",
+          description: "Prescription playback and downloadable government-compliant documents",
+          icon: FileText
+        },
+        {
+          title: "Medication Ordering",
+          description: "Verified supply chain with auto-refill and proximity-based matching",
+          icon: Pill
+        }
+      ]
+    },
+    {
+      category: "Doctor App Features",
+      icon: Stethoscope,
+      color: "text-secondary",
+      bgColor: "bg-secondary/5",
+      features: [
+        {
+          title: "Government Badge Verification",
+          description: "Certificate upload with admin approval for legal compliance",
+          icon: Award
+        },
+        {
+          title: "Advanced Dashboard",
+          description: "Real-time queue management with urgent patient alerts",
+          icon: BarChart
+        },
+        {
+          title: "Research-First Workflow",
+          description: "Mark cases for national AYUSH research pool contribution",
+          icon: Search
+        },
+        {
+          title: "E-Prescription Generator",
+          description: "Herbal database with AI recommendations and direct pharmacy sharing",
+          icon: Brain
+        },
+        {
+          title: "Telemedicine Platform",
+          description: "Integrated video consultations with government compliance",
+          icon: Phone
+        },
+        {
+          title: "Achievement Showcase",
+          description: "Public profile visible on government portals for transparency",
+          icon: Star
+        }
+      ]
+    },
+    {
+      category: "Chemist/Pharmacy Features",
+      icon: Pill,
+      color: "text-accent",
+      bgColor: "bg-accent/5",
+      features: [
+        {
+          title: "Licensing Verification",
+          description: "Integrated stock management with real-time prescription dashboard",
+          icon: CheckCircle
+        },
+        {
+          title: "Batch Management",
+          description: "Government-compliant expiry control and quality tracking",
+          icon: Database
+        },
+        {
+          title: "Order Fulfillment",
+          description: "Delivery partner coordination with comprehensive workflow management",
+          icon: Truck
+        },
+        {
+          title: "Smart Notifications",
+          description: "Low-stock alerts for herbs with automated reorder suggestions",
+          icon: Bell
+        },
+        {
+          title: "Supply Chain Tracking",
+          description: "End-to-end verification with government compliance checks",
+          icon: Activity
+        },
+        {
+          title: "Payment Integration",
+          description: "UPI/Razorpay integration with government-approved gateways",
+          icon: CreditCard
+        }
+      ]
+    },
+    {
+      category: "Cross-Role System Features",
+      icon: Globe,
+      color: "text-success",
+      bgColor: "bg-success/5",
+      features: [
+        {
+          title: "Pan-India Portability",
+          description: "Access records and services nationwide with seamless data sync",
+          icon: MapPin
+        },
+        {
+          title: "Elderly Mode",
+          description: "Large fonts, voice navigation certified by government guidelines",
+          icon: Smartphone
+        },
+        {
+          title: "AI-Driven Recommendations",
+          description: "Personalized Ayurveda suggestions using fine-tuned Indian models",
+          icon: Brain
+        },
+        {
+          title: "Offline Mode",
+          description: "Secure caching for consultation access in low-connectivity regions",
+          icon: Wifi
+        },
+        {
+          title: "Multilingual Support",
+          description: "Regional language interfaces following inclusivity guidelines",
+          icon: Languages
+        },
+        {
+          title: "Government Integration",
+          description: "FHIR-R4, EHR standards with open API interoperability",
+          icon: Lock
+        }
+      ]
     }
   ];
 
@@ -157,6 +346,95 @@ const RoleSelection = () => {
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">
               <MapPin className="h-4 w-4 text-success" />
               <span>Pan-India Coverage</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Detailed Feature Sections */}
+        <div className="mt-20 space-y-16">
+          {detailedFeatures.map((section, sectionIndex) => (
+            <div key={sectionIndex} className="space-y-8">
+              <div className="text-center">
+                <div className={`inline-flex items-center justify-center p-3 rounded-lg ${section.bgColor} mb-4`}>
+                  <section.icon className={`h-8 w-8 ${section.color}`} />
+                </div>
+                <h3 className="text-2xl md:text-3xl font-bold mb-4">
+                  {section.category}
+                </h3>
+              </div>
+              
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {section.features.map((feature, featureIndex) => (
+                  <Card 
+                    key={featureIndex}
+                    className="group hover:shadow-lg transition-all duration-300 border border-border/50 hover:border-primary/30 bg-card/60 backdrop-blur-sm hover:bg-card/80"
+                  >
+                    <CardHeader className="pb-3">
+                      <div className="flex items-start space-x-3">
+                        <div className={`p-2 rounded-lg ${section.bgColor} flex-shrink-0`}>
+                          <feature.icon className={`h-5 w-5 ${section.color}`} />
+                        </div>
+                        <div className="flex-1">
+                          <CardTitle className="text-lg leading-tight">
+                            {feature.title}
+                          </CardTitle>
+                        </div>
+                      </div>
+                    </CardHeader>
+                    <CardContent>
+                      <CardDescription className="text-sm leading-relaxed">
+                        {feature.description}
+                      </CardDescription>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Core System Highlights */}
+        <div className="mt-20 p-8 bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5 rounded-2xl">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">
+              Government-Grade Healthcare Technology
+            </h3>
+            <p className="text-muted-foreground max-w-3xl mx-auto">
+              Built with modern, scalable technology following Indian government health data standards
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="text-center space-y-3">
+              <div className="p-3 bg-primary/10 rounded-lg inline-flex">
+                <Zap className="h-6 w-6 text-primary" />
+              </div>
+              <h4 className="font-semibold">Modern Tech Stack</h4>
+              <p className="text-sm text-muted-foreground">React, Node.js, MongoDB with cloud storage</p>
+            </div>
+            
+            <div className="text-center space-y-3">
+              <div className="p-3 bg-secondary/10 rounded-lg inline-flex">
+                <Lock className="h-6 w-6 text-secondary" />
+              </div>
+              <h4 className="font-semibold">FHIR-R4 Compliant</h4>
+              <p className="text-sm text-muted-foreground">Interoperable with EHR and open API standards</p>
+            </div>
+            
+            <div className="text-center space-y-3">
+              <div className="p-3 bg-accent/10 rounded-lg inline-flex">
+                <CreditCard className="h-6 w-6 text-accent" />
+              </div>
+              <h4 className="font-semibold">Payment Integration</h4>
+              <p className="text-sm text-muted-foreground">Razorpay/UPI with government-approved gateways</p>
+            </div>
+            
+            <div className="text-center space-y-3">
+              <div className="p-3 bg-success/10 rounded-lg inline-flex">
+                <Globe className="h-6 w-6 text-success" />
+              </div>
+              <h4 className="font-semibold">Accessibility First</h4>
+              <p className="text-sm text-muted-foreground">Multilingual, elderly-friendly, offline-capable</p>
             </div>
           </div>
         </div>
