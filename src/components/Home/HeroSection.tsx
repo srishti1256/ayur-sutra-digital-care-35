@@ -83,7 +83,7 @@ const HeroSection = () => {
           </div>
 
           {/* Right Content - Hero Image */}
-          <div className="relative">
+          <div className="relative -mt-8">
             <div className="relative z-10">
               <img
                 src={heroImage}
